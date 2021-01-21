@@ -1,0 +1,28 @@
+$SeconderyColor: #2d4059;
+$UltraSmallText: .8rem;
+.Footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    color: $SeconderyColor;
+    opacity: 0.8;
+    font-size: $UltraSmallText;
+    padding-bottom: .2em;
+    .Background{
+        .iedcLogo{
+            width: 25px;
+            height: 50px;
+        }
+    }
+}
+
+@media only screen and (min-width: 960px){
+    .Footer{
+       position: absolute;
+       bottom: 4.8%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+    }
+}

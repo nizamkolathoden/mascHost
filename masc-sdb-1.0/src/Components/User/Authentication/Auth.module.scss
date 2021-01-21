@@ -1,0 +1,187 @@
+$SeconderyColor: #2d4059;
+$ThirdColor: #ea5455;
+$FontFam: 'Poppins', sans-serif;
+$SeconderyFontcolor: #fafafa;
+$UltraSmallText: .9rem;
+$PcUltraSmallText: 1.2rem;
+$PcHeadingSize: 1.5rem;
+.Auth{
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.AuthSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .container{
+        margin-top: 1em;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .Logos{
+            img{
+                margin: 1em;
+                width: 125px;
+                height: 117px;
+            }
+            .iedc{
+                display: none;
+            }
+            .csdpt{
+                display: none;
+            }
+        }
+    
+        .mainHead{
+            margin-bottom: 0.5em;
+            margin-top: 0.5em;
+            font-size: $PcHeadingSize;
+            color: $SeconderyColor;
+        }
+        .paragraph{
+            color: $SeconderyColor;
+            text-align: center;
+            letter-spacing: 1px;
+            width: 70%;
+        }
+    }
+ 
+}
+.AuthForm{
+   display: grid;
+   grid-template-rows: auto 1fr;
+   grid-gap: 1em;
+   justify-content: center;
+   .Auth_Header{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+    h3{
+        margin-top: 1em;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: $SeconderyColor;
+    }
+    .subHead{
+        color: $SeconderyColor;
+        letter-spacing: 1px;
+        display: none;
+    }
+
+   }
+   .Form{
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       .ErrorMsg{
+        font-weight: 300;
+        // letter-spacing: 1px;
+        font-size: $UltraSmallText;
+        color: $ThirdColor;
+        display: none;
+    }
+       form{
+           text-align: center;
+           .Input{
+               margin-top: 2em;
+               border-radius: 2px;
+               border: none;
+               outline: none;
+            }
+           .Username, .Password{
+               padding: 1em 2.5em;
+               border-bottom: 2px solid rgba($color: #2d4059, $alpha: 0);
+               opacity: 1;
+               color: $SeconderyColor;
+               box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+               &::placeholder{
+                   font-weight: 400;
+               }
+               &:focus{
+                   transition: .7s ease;
+                border-bottom: 2px solid rgba($color: #2d4059, $alpha: 1);
+               }
+             
+           }
+           .Submit{
+            padding: .8em 2.5em;
+            border-radius: 2px;
+            background: $SeconderyColor;
+            color: $SeconderyFontcolor;
+            font-weight: 600;
+            cursor: pointer;
+        }
+       }
+   }
+
+}
+@media only screen and (min-width: 960px){
+    .Auth{
+        grid-template-rows: none;
+        grid-template-rows:1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "image login" "image login";
+       
+    }
+    .AuthForm{
+        display: flex;
+        flex-direction: column;
+        grid-area: login;
+        align-items: center;
+        .Auth_Header{
+            h3{
+                font-size: $PcHeadingSize;
+            }
+            .subHead{
+                display: block;
+                padding-bottom: 0.5em;
+                font-size: $PcUltraSmallText;
+            }
+        }
+        .Form{
+            form{
+                .Input{
+                    margin-top: 2.5em;
+                }
+                .Username, .Password{
+                    padding: 1.3em 3em;
+                    font-size: $UltraSmallText;
+                    font-weight: 600;
+                }
+                .Submit{
+            padding: 1.1em 3em;
+                }
+            }
+           
+        }
+       
+    }
+    .AuthSection{
+        grid-area: image;
+    
+       
+        .container{
+            margin-top: -3.1em;
+            .Logos{
+                .iedc{
+                    display: inline;
+                }
+                .csdpt{
+        display: inline;
+                }
+            }
+            .mainHead{
+                font-size: 2rem;
+            }
+            .paragraph{
+font-size: 1.2rem;
+            }
+        }
+        
+    }
+    
+}
+
+

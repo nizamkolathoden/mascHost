@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACP,OAAO,EAAE,IAAI;EACb,kBAAkB,EAAE,QAAQ;CAY7B;;AAdD,AAGE,QAHM,CAGN,gBAAgB,CAAC;EACf,UAAU,EAAE,KAAK;EACjB,UAAU,EAAE,OAAO;EACnB,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,uBAAuB;EAC9C,UAAU,EAAE,KAAK;EACjB,aAAa,EAAE,KAAK;EACpB,QAAQ,EAAE,IAAI;EACd,aAAa,EAAE,MAAM;EACrB,aAAa,EAAE,MAAM;CACtB",
+    "sources": [
+        "Landing.module.scss"
+    ],
+    "names": [],
+    "file": "Landing.module.css"
+}

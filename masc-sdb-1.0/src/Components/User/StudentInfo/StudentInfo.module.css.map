@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "StudentInfo.module.scss"
+    ],
+    "names": [],
+    "file": "StudentInfo.module.css"
+}

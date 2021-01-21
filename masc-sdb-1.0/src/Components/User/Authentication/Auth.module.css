@@ -1,0 +1,244 @@
+.Auth {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+}
+
+.AuthSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.AuthSection .container {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.AuthSection .container .Logos img {
+  margin: 1em;
+  width: 125px;
+  height: 117px;
+}
+
+.AuthSection .container .Logos .iedc {
+  display: none;
+}
+
+.AuthSection .container .Logos .csdpt {
+  display: none;
+}
+
+.AuthSection .container .mainHead {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  font-size: 1.5rem;
+  color: #2d4059;
+}
+
+.AuthSection .container .paragraph {
+  color: #2d4059;
+  text-align: center;
+  letter-spacing: 1px;
+  width: 70%;
+}
+
+.AuthForm {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+  grid-gap: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.AuthForm .Auth_Header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.AuthForm .Auth_Header h3 {
+  margin-top: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #2d4059;
+}
+
+.AuthForm .Auth_Header .subHead {
+  color: #2d4059;
+  letter-spacing: 1px;
+  display: none;
+}
+
+.AuthForm .Form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.AuthForm .Form .ErrorMsg {
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #ea5455;
+  display: none;
+}
+
+.AuthForm .Form form {
+  text-align: center;
+}
+
+.AuthForm .Form form .Input {
+  margin-top: 2em;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+}
+
+.AuthForm .Form form .Username, .AuthForm .Form form .Password {
+  padding: 1em 2.5em;
+  border-bottom: 2px solid rgba(45, 64, 89, 0);
+  opacity: 1;
+  color: #2d4059;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.AuthForm .Form form .Username::-webkit-input-placeholder, .AuthForm .Form form .Password::-webkit-input-placeholder {
+  font-weight: 400;
+}
+
+.AuthForm .Form form .Username:-ms-input-placeholder, .AuthForm .Form form .Password:-ms-input-placeholder {
+  font-weight: 400;
+}
+
+.AuthForm .Form form .Username::-ms-input-placeholder, .AuthForm .Form form .Password::-ms-input-placeholder {
+  font-weight: 400;
+}
+
+.AuthForm .Form form .Username::placeholder, .AuthForm .Form form .Password::placeholder {
+  font-weight: 400;
+}
+
+.AuthForm .Form form .Username:focus, .AuthForm .Form form .Password:focus {
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+  border-bottom: 2px solid #2d4059;
+}
+
+.AuthForm .Form form .Submit {
+  padding: .8em 2.5em;
+  border-radius: 2px;
+  background: #2d4059;
+  color: #fafafa;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 960px) {
+  .Auth {
+    -ms-grid-rows: none;
+        grid-template-rows: none;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "image login" "image login";
+  }
+  .AuthForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: login;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .AuthForm .Auth_Header h3 {
+    font-size: 1.5rem;
+  }
+  .AuthForm .Auth_Header .subHead {
+    display: block;
+    padding-bottom: 0.5em;
+    font-size: 1.2rem;
+  }
+  .AuthForm .Form form .Input {
+    margin-top: 2.5em;
+  }
+  .AuthForm .Form form .Username, .AuthForm .Form form .Password {
+    padding: 1.3em 3em;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .AuthForm .Form form .Submit {
+    padding: 1.1em 3em;
+  }
+  .AuthSection {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: image;
+  }
+  .AuthSection .container {
+    margin-top: -3.1em;
+  }
+  .AuthSection .container .Logos .iedc {
+    display: inline;
+  }
+  .AuthSection .container .Logos .csdpt {
+    display: inline;
+  }
+  .AuthSection .container .mainHead {
+    font-size: 2rem;
+  }
+  .AuthSection .container .paragraph {
+    font-size: 1.2rem;
+  }
+}
+/*# sourceMappingURL=Auth.module.css.map */

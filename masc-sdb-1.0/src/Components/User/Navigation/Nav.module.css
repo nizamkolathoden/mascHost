@@ -1,0 +1,273 @@
+.Nav {
+  height: 15vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.Option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Option ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #2d4059;
+  background: #fafafa;
+}
+
+.Option ul .Logout {
+  font-weight: 600;
+  color: #ea5455;
+}
+
+.Menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 8vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Menu .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.Menu .header .MainHeader {
+  color: #2d4059;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.Menu .header .Filter {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.Menu .FiltercardDeactive {
+  display: none;
+}
+
+.Menu .Filtercard {
+  position: fixed;
+  top: 23%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.8fr;
+      grid-template-columns: 0.8fr;
+  -ms-grid-rows: 0.1fr 1fr;
+      grid-template-rows: 0.1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20em;
+  height: 25em;
+  background: #fafafa;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  z-index: 10;
+}
+
+.Menu .Filtercard .Exit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: -1em;
+}
+
+.Menu .Filtercard .Exit .FilterClose {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.Menu .Filtercard .Form {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.Menu .Filtercard .Form .FilterHead {
+  color: #2d4059;
+  font-size: 1.2rem;
+}
+
+.Menu .Filtercard .Form .FilterserchForm {
+  width: 100%;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Menu .Filtercard .Form .FilterserchForm label {
+  color: #2d4059;
+  font-weight: 600;
+  margin: 0.5;
+}
+
+.Menu .Filtercard .Form .FilterserchForm select {
+  border: none;
+  outline: none;
+  background: #fafafa;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  padding: 0.5em;
+  color: #2d4059;
+}
+
+.Menu .Filtercard .Form .FilterserchForm select:focus {
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  border-bottom: 2px solid #2d4059;
+}
+
+.Menu .Filtercard .Form .FilterserchForm .FilterSearchSubmit {
+  margin-top: 1em;
+  padding: 0.5em;
+  background: #2d4059;
+  border: none;
+  color: #fafafa;
+  cursor: pointer;
+}
+
+.StudentNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100vw;
+  height: 8vh;
+  background: #fafafa;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.StudentNav p {
+  color: #2d4059;
+}
+
+.StudentNav button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+@media only screen and (min-width: 960px) {
+  .Nav {
+    height: 6vh;
+    -ms-grid-rows: none;
+        grid-template-rows: none;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .Menu {
+    height: 6vh;
+  }
+  .Menu .header .MainHeader {
+    font-size: 1.5rem;
+  }
+  .Menu .header .Filter {
+    position: fixed;
+    background: #fafafa;
+    top: 10%;
+    left: 87%;
+    height: 4em;
+    width: 4em;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+            box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 10;
+  }
+  .Menu .Filtercard {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .StudentNav {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=Nav.module.css.map */

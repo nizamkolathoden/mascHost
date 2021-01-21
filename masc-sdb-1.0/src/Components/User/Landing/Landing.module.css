@@ -1,0 +1,21 @@
+.Landing {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+}
+
+.Landing .StudentDataShow {
+  min-height: 100vh;
+  background: #f5f5f5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (20em)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 20em);
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  grid-gap: 20px;
+  justify-items: center;
+  place-content: center;
+}
+/*# sourceMappingURL=Landing.module.css.map */

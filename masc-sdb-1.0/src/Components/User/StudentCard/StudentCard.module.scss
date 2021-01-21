@@ -1,0 +1,98 @@
+$SeconderyColor: #2d4059;
+$ThirdColor: #ea5455;
+$FontFam: "Poppins", sans-serif;
+$Primarycolor: #fafafa;
+$SeconderyFontcolor: #fafafa;
+$UltraSmallText: 0.9rem;
+$PcUltraSmallText: 1.2rem;
+$PcHeadingSize: 1.5rem;
+.StudentCardContainer {
+  height: 200px;
+  width: 250px;
+  background: $Primarycolor;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  .StudentDetails {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+    color: $SeconderyColor;
+    .name {
+      font-weight: 600;
+      span {
+        font-weight: 400;
+      }
+    }
+    .admno {
+      font-weight: 600;
+      color: $ThirdColor;
+      span {
+        font-weight: 400;
+        color: $SeconderyColor;
+      }
+    }
+  }
+  .StudentPhoto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .Photo {
+      background: $Primarycolor;
+      height: 3em;
+      width: 3em;
+
+      img {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 680px) {
+  .StudentCardContainer {
+    height: 350px;
+    width: 300px;
+    .StudentDetails{
+        line-height: 2.5em;
+    }
+    .StudentPhoto {
+        .Photo{
+            height: 4.2em;
+      width: 4.2em;
+        }
+    }
+  }
+
+}
+@media only screen and (min-width: 960px) {
+  .StudentCardContainer {
+    height: 350px;
+    width: 300px;
+    .StudentPhoto {
+        .Photo{
+            height: 5.2em;
+      width: 5.2em;
+        }
+    }
+  }
+  @media only screen and (min-width: 1180px) {
+    .StudentCardContainer {
+      height: 350px;
+      width: 300px;
+      .StudentDetails{
+          line-height: 2.5em;
+      }
+      .StudentPhoto {
+        .Photo{
+            height: 5.9em;
+      width: 5.9em;
+        }
+    }
+    }
+  }
+}

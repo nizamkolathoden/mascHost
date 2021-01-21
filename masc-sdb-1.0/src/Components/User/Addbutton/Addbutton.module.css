@@ -1,0 +1,28 @@
+.Addbutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background: #2d4059;
+  position: fixed;
+  top: 85%;
+  left: 75%;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 960px) {
+  .Addbutton {
+    left: 87%;
+  }
+}
+/*# sourceMappingURL=Addbutton.module.css.map */

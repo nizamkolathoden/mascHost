@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+$FontFam: 'Poppins', sans-serif;
+$Primarycolor: #fafafa;
+$SeconderyColor: #2d4059;
+$ThirdColor: #ea5455;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $FontFam;
+    scroll-behavior: smooth;
+}
+.App{
+    min-height: 100vh;
+    overflow: hidden;
+    background: $Primarycolor;
+    display: grid;
+}

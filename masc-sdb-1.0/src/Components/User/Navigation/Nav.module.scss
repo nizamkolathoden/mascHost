@@ -1,0 +1,190 @@
+$SeconderyColor: #2d4059;
+$ThirdColor: #ea5455;
+$FontFam: "Poppins", sans-serif;
+$Primarycolor: #fafafa;
+$SeconderyFontcolor: #fafafa;
+$UltraSmallText: 0.9rem;
+$PcUltraSmallText: 1.2rem;
+$PcHeadingSize: 1.5rem;
+.Nav {
+  height: 15vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+.Option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    color: $SeconderyColor;
+    background: $Primarycolor;
+    .Logout {
+      font-weight: 600;
+      color: $ThirdColor;
+    }
+  }
+}
+.Menu {
+  display: flex;
+  height: 8vh;
+  // width: 100vw;
+  align-items: center;
+  justify-content: space-around;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    .MainHeader {
+      color: $SeconderyColor;
+      font-size: $UltraSmallText;
+      letter-spacing: 1px;
+    }
+    .Filter {
+      background: none;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+  .FiltercardDeactive {
+    display: none;
+  }
+  .Filtercard {
+    position: fixed;
+    top: 23%;
+    display: grid;
+    grid-template-columns: 0.8fr;
+    grid-template-rows: 0.1fr 1fr;
+    // align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 20em;
+    height: 25em;
+    background: $Primarycolor;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    z-index: 10;
+    .Exit {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: -1em;
+      .FilterClose {
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+    .Form {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+      .FilterHead {
+        color: $SeconderyColor;
+        font-size: $PcUltraSmallText;
+      }
+      // .Filter_Text{
+      //     color: $SeconderyColor;
+      //     width: 50%;
+      // }
+      .FilterserchForm {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        label {
+          color: $SeconderyColor;
+          font-weight: 600;
+          margin: 0.5;
+        }
+        select {
+          border: none;
+          outline: none;
+          background: $Primarycolor;
+          box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+          padding: 0.5em;
+          color: $SeconderyColor;
+          &:focus {
+            transition: 0.7s ease;
+            border-bottom: 2px solid rgba($color: #2d4059, $alpha: 1);
+          }
+        }
+        .FilterSearchSubmit {
+          margin-top: 1em;
+          padding: 0.5em;
+          background: $SeconderyColor;
+          border: none;
+          color: $Primarycolor;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.StudentNav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 8vh;
+  background: $Primarycolor;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  p{
+    color: $SeconderyColor;
+  }
+  button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background: none;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .Nav {
+    height: 6vh;
+    grid-template-rows: none;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Menu {
+    height: 6vh;
+    .header {
+      .MainHeader {
+        font-size: $PcHeadingSize;
+      }
+      .Filter {
+        position: fixed;
+        background: $Primarycolor;
+        top: 10%;
+        left: 87%;
+        height: 4em;
+        width: 4em;
+        box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+      }
+    }
+    .Filtercard {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .StudentNav{
+   font-size: $PcHeadingSize;
+  }
+}
